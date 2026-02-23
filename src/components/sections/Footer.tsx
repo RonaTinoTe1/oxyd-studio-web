@@ -1,48 +1,44 @@
-import { Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
-
-// Hick's Law: Footer = legal obligation only. No navigation choices.
+import { Github, Twitter, Mail } from 'lucide-react';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer
-      className="relative py-12 border-t border-border/50 safe-area-inset-bottom"
+      className="relative py-12 border-t border-border/30 safe-area-inset-bottom"
       role="contentinfo"
-      aria-label="Pied de page"
+      aria-label="Footer"
     >
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-
-          <div className="flex items-center gap-4">
-            <span className="text-lg font-bold text-foreground tracking-tight" aria-hidden="true">OXYD</span>
-            <span className="text-sm text-muted-foreground">© {currentYear} Oxyd Studio</span>
-          </div>
-
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-muted-foreground">
           <a
             href="mailto:contact@oxyd.studio"
-            className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
-            aria-label="Nous contacter par email à contact@oxyd.studio"
+            className="inline-flex items-center gap-2 text-sm hover:text-foreground transition-colors"
+            aria-label="Email us at contact@oxyd.studio"
           >
-            <Mail className="w-4 h-4" aria-hidden="true" />
-            contact@oxyd.studio
+            <Mail className="w-4 h-4" />
+            <span>contact@oxyd.studio</span>
           </a>
 
-          <nav aria-label="Liens légaux" className="flex items-center gap-4 text-sm text-muted-foreground">
-            <Link
-              to="/mentions-legales"
-              className="hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
+          <div className="flex items-center gap-6">
+            <a
+              href="https://github.com/RonaTinoTe1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+              aria-label="GitHub"
             >
-              Mentions légales
-            </Link>
-            <Link
-              to="/confidentialite"
-              className="hover:text-foreground transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
+              <Github className="w-5 h-5" />
+            </a>
+
+            <a
+              href="https://x.com/oxydstudio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+              aria-label="Twitter / X"
             >
-              Confidentialité
-            </Link>
-          </nav>
+              <Twitter className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

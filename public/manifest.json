@@ -1,15 +1,15 @@
 {
   "name": "OXYD Studio",
   "short_name": "OXYD",
-  "description": "Votre site attire du monde. On le fait vendre.",
+  "description": "We build AI that makes real contact.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#050505",
-  "theme_color": "#2563EB",
+  "theme_color": "#050505",
   "orientation": "portrait-primary",
   "scope": "/",
-  "lang": "fr-FR",
-  "categories": ["business", "productivity"],
+  "lang": "en-US",
+  "categories": ["developer", "technology"],
   "icons": [
     {
       "src": "/favicon.png",
