@@ -1,0 +1,13 @@
+export { Navbar } from './Navbar';
+export { HeroSection } from './HeroSection';
+export { TensionSection } from './TensionSection';
+export { SolutionSection } from './SolutionSection';
+export { MetricsSection } from './MetricsSection';
+export { ProcessSection } from './ProcessSection';
+export { DifferentiationSection } from './DifferentiationSection';
+export { AntiProfileSection } from './AntiProfileSection';
+export { GuaranteeSection } from './GuaranteeSection';
+export { PricingSection } from './PricingSection';
+export { FinalCTASection } from './FinalCTASection';
+export { ContactSection } from './ContactSection';
+export { Footer } from './Footer';

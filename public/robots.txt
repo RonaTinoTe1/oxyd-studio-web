@@ -1,0 +1,11 @@
+# OXYD Studio - robots.txt
+# https://oxyd-studio.netlify.app
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://oxyd-studio.netlify.app/sitemap.xml
+
+# Crawl-delay (optional, respected by some bots)
+Crawl-delay: 1
